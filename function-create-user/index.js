@@ -25,6 +25,7 @@ let ERRORS = {
 exports.handler = async((event, context, callback) => {
 	let output = {};
 	let userDao = new UserDAO();
+	// TODO: Securize with authorizer
 	try {
 		let body = JSON.parse(event.body);
 		let validation = validate(body, schema);
