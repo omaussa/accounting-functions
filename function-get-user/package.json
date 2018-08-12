@@ -1,0 +1,25 @@
+{
+  "name": "function-get-user",
+  "version": "1.0.0",
+  "description": "function made to get an user in the accounting db",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/*.test.js"
+  },
+  "keywords": [
+    "create-user",
+    "serverless",
+    "aws",
+    "lambda"
+  ],
+  "author": "wolfcor",
+  "license": "ISC",
+  "dependencies": {
+    "accounting-config": "file:///home/wolfcor/workspace/accounting/accounting-config",
+    "asyncawait": "^1.0.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
